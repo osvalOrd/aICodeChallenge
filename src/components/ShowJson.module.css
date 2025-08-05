@@ -1,0 +1,64 @@
+.json-display {
+  margin: 2rem auto 0;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.json-display h2 {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.json-display pre {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+  text-align: left;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .json-display {
+    margin: 1rem auto 0;
+    max-width: 100%;
+  }
+  
+  .json-display h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .json-display pre {
+    padding: 1rem;
+    max-height: 300px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .json-display {
+    margin: 0.5rem auto 0;
+  }
+  
+  .json-display h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .json-display pre {
+    padding: 0.75rem;
+    max-height: 250px;
+    font-size: 0.8rem;
+  }
+}
+  

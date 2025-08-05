@@ -1,42 +1,105 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #3f3f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 2rem;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 800px;
+  transition: all 0.4s ease;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.app-container.result {
+  justify-content: space-between;
+  padding: 2rem 2rem 1rem;
+}
+
+.result-content {
+  flex: 1;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editor-footer {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #b3b3b3;
   text-align: center;
+  width: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+textarea, button, div {
+  box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1rem;
+    max-width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .app-container.result {
+    padding: 1rem 1rem 0.5rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .result-content {
+    max-width: 100%;
+  }
+  
+  .editor-footer {
+    max-width: 100%;
+    margin-top: 1rem;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 480px) {
+  .app-container {
+    padding: 0.5rem;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  
+  .app-container.result {
+    padding: 0.5rem 0.5rem 0.25rem;
+  }
+  
+  h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
 }
