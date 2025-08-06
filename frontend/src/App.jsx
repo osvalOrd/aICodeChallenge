@@ -19,7 +19,7 @@ function App() {
     setError('');
 
     try {
-      const response = await axios.post('http://localhost:3000/api/parse', {
+      const response = await axios.post('https://aicodechallenge.onrender.com/api/parse', {
         text: inputText,
         conversationHistory: conversationHistory,
       });
