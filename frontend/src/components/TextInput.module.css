@@ -8,7 +8,7 @@
   resize: vertical;
   box-sizing: border-box;
   background-color: rgb(54, 54, 54);
-  color: black;
+  color: rgb(255, 255, 255);
   margin: 0 auto;
   display: block;
   min-height: 120px;

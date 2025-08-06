@@ -44,6 +44,10 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.result-section h2 {
+  color: #b3b3b3;
+}
+
 .clear-button {
   margin-top: 1rem;
   padding: 10px 20px;

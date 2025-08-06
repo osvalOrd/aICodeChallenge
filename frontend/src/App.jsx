@@ -36,7 +36,7 @@ function App() {
       // Clear input for next message
       setInputText('');
     } catch (err) {
-      setError('Error al conectar con el servidor o procesar la respuesta.');
+      setError('Error trying to parse the text.');
     } finally {
       setLoading(false);
     }

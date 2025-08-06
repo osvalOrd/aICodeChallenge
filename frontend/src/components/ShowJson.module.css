@@ -7,13 +7,14 @@
 
 .json-display h2 {
   margin-bottom: 1rem;
-  color: #333;
+  color: #b3b3b3;
   font-size: 1.5rem;
   text-align: center;
 }
 
 .json-display pre {
-  background-color: #f4f4f4;
+  background-color: #3b3b3b;
+  color: #ffffff;
   padding: 1.5rem;
   border-radius: 8px;
   overflow-x: auto;

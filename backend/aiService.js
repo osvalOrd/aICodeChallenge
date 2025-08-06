@@ -1,6 +1,6 @@
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
-const GEMINI_API_KEY = "AIzaSyDdqcJGdmj5rYRNWGYT-J3P81LS8ZXLttI";
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 async function getStructuredResponse(userText, conversationHistory = []) {
   let contextPrompt = '';
@@ -35,7 +35,7 @@ JSON:`;
     console.error('Error calling Gemini API:', error.message);
     console.error('Error details:', error);
     return {
-      date: "2024-01-15",
+      date: "unknown",
       location: "Error Location",
       description: `Error processing request: ${error.message}`,
       injuries: false,
